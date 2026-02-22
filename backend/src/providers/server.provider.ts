@@ -11,7 +11,7 @@ class Server {
   public server: Hono<AppBindings>;
 
   constructor() {
-    this.port = Number(process.env.PORT) || 3000;
+    this.port = Number(process.env.APP_PORT) || 5600;
     this.server = new Hono<AppBindings>();
     this.routes();
   }
